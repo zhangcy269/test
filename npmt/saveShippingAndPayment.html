@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html xmlns:wb="http://open.weibo.com/wb">
+	<head>
+	<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>查看订单 - 阿迪达斯官方商城</title>
+<meta name="description" content="欢迎来到adidas 阿迪达斯中国官方旗舰店！在线销售足球、跑步、篮球、训练、网球、户外、高尔夫、adidas by Stella McCartney系列运动装备，及adidas Originals、NEO、SLVR经典休闲时尚产品。" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="keywords" content="adidas,阿迪达斯,阿迪达斯中国, adidas 中国,阿迪达斯官方旗舰店,adidas官方旗舰店,adidas三叶草,adidas Originals,三叶草,足球,篮球,网球,adidas鞋,阿迪达斯鞋,adidas服饰,阿迪达斯服饰,阿迪达斯足球,跑步,训练,SLVR,户外,NEO,滑板,Porsche Design,高尔夫,STELLA MCCARTNEY" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="icon" href="https://www.adidas.com.cn/skin/frontend/arvato/default/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="https://www.adidas.com.cn/skin/frontend/arvato/default/favicon.ico" type="image/x-icon" />
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'https://www.adidas.com.cn/js/blank.html';
+    var BLANK_IMG = 'https://www.adidas.com.cn/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="https://www.adidas.com.cn/skin/frontend/arvato/default/style/common.css" media="all" />
+<link rel="stylesheet" type="text/css" href="https://www.adidas.com.cn/skin/frontend/arvato/default/font/fonts.css" media="all" />
+<link rel="stylesheet" type="text/css" href="https://www.adidas.com.cn/skin/frontend/arvato/default/style/r3common.css" media="all" />
+<link rel="stylesheet" type="text/css" href="https://www.adidas.com.cn/skin/frontend/arvato/default/release_three/style/checkout.css" media="all" />
+<script type="text/javascript" src="https://www.adidas.com.cn/skin/frontend/arvato/default/js/common/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="https://www.adidas.com.cn/skin/frontend/arvato/default/js/common/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="https://www.adidas.com.cn/skin/frontend/arvato/default/js/common/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="https://www.adidas.com.cn/skin/frontend/arvato/default/js/frame/jquery-ui-1.10.4.custom.js"></script>
+<script type="text/javascript" src="https://www.adidas.com.cn/skin/frontend/arvato/default/js/frame/arvato_touch.js"></script>
+<script type="text/javascript" src="https://www.adidas.com.cn/skin/frontend/arvato/default/js/frame/carousel_images.js"></script>
+<script type="text/javascript" src="https://www.adidas.com.cn/skin/frontend/arvato/default/js/frame/touchslider.js"></script>
+<script type="text/javascript" src="https://www.adidas.com.cn/skin/frontend/arvato/default/js/common/common_mini_shoppingcar.js"></script>
+<script type="text/javascript" src="https://www.adidas.com.cn/skin/frontend/arvato/default/js/common/common_product_struct.js"></script>
+<script type="text/javascript" src="https://www.adidas.com.cn/skin/frontend/arvato/default/js/common/common_search.js"></script>
+<script type="text/javascript" src="https://www.adidas.com.cn/skin/frontend/arvato/default/js/frame/jquery.flexslider.js"></script>
+<script type="text/javascript" src="https://www.adidas.com.cn/skin/frontend/arvato/default/js/frame/page_image_asyn.js"></script>
+<script type="text/javascript" src="https://www.adidas.com.cn/skin/frontend/arvato/default/release_three/js/common.js"></script>
+<script type="text/javascript" src="https://www.adidas.com.cn/skin/frontend/arvato/default/release_three/js/frame.js"></script>
+<script type="text/javascript" src="https://www.adidas.com.cn/skin/frontend/arvato/default/release_three/js/checkout2.js"></script>
+<script src="//tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["CN"];
+//]]>
+</script>
+<script type='text/javascript'>
+
+$(function(){
+	    $.getJSON("https://www.adidas.com.cn/api/ajaxheader.php", function(data) {
+	        if(data.flag !=0){
+	            $('.loginGroup .login_redesign').text(data.name);
+	        }else{
+	        	$('.loginGroup .login_redesign').text('登录');
+	        }
+	        if(data.qty == 0){
+                $(".manicarBox").hide();
+                $(".emptyCart").show();
+            }else{
+                $(".emptyCart").hide();
+				$(".minicart .minicartNum .miniNum").html(data.qty);
+				$(".minicart").addClass("bgMiniCart");
+            }
+	    });
+})
+
+function getPopUrl(key){
+	if(key == 'addCart'){
+		return 'https://www.adidas.com.cn/specific/Ajaxshowuserlogin/successAddCart/' ;
+	}
+	if(key == 'addCartFail'){
+		return 'https://www.adidas.com.cn/specific/Ajaxshowuserlogin/mixedAddCart/' ;
+	}
+	if(key == 'miniShoppingcar'){
+		return 'https://www.adidas.com.cn/skin/frontend/arvato/default/' + 'component/popup_minishoppingcar.php' ;
+	}
+	if(key=="headAccount"){
+            
+	} 
+        if(key=="registerSuccess"){
+            return 'https://www.adidas.com.cn/skin/frontend/arvato/default/' + 'component/popup_register_success.php' ;
+        }
+    if(key=="subscribeSuccess"){
+        return 'https://www.adidas.com.cn/skin/frontend/arvato/default/' + 'component/popup_subscribe_success.php' ;
+    }
+     if(key=="r3scEditKey"){
+        return 'https://www.adidas.com.cn/specific/Ajaxshowuserlogin/r3shoppingCart/';
+       // return '/skin/frontend/arvato/default/release_three/component/popup_r3shoppingCart.html' ;
+        
+    }
+}
+function getPopUrlUser(callback){
+   return false;
+}
+function getAjaxUrl(key){
+	if(key =='miniShoppingcar'){
+		return  {
+			url:"https://www.adidas.com.cn/specific/Ajaxshoppingcart/arvatoAjaxCart/",type:"GET",data:{}
+		};
+	}
+	if(key =='search'){
+		var q =  jQuery('#arvato_q').val() ; 
+		return {
+			url:"https://www.adidas.com.cn/catalogsearch/ajax/suggest/",type:"GET",data:{"q":q}
+		};
+	}
+}
+
+
+</script>
+<!--  
+<script type="text/javascript" src="//tags.tiqcdn.com/utag/adidas/adidaschina/prod/utag.sync.js"></script>
+ -->
+    	<script>bazadebezolkohpepadr="298443058"</script><script type="text/javascript" src="https://www.adidas.com.cn/akam/10/11c9e021" defer></script></head>
+    <body>
+    		
+    	    		<!--start pop bg-->
+			<div class="addCartOverlay"></div>
+			<!--end pop bg-->
+    		
+    		    		<!--start 面包屑-->
+<div class="checkoutBcBox cf">
+        <!--start wrapper min-width:950px-->
+        <div class="wrapper">
+                <span class="checkComplete"><em>1</em>填写订单</span>
+        <span class="cur"><em>2</em>订单确认</span>
+                <span class="checkComplete"><em>3</em>支付订单</span>
+    </div>
+    <!--end wrapper min-width:950px-->
+</div>
+<!--end 面包屑--><script>
+var utag_cart_id = '1086386'; 
+</script> 
+<div class="headerBox">
+	<!--start black background header-->
+	<div class="headTop">
+        <!--start wrapper min-width:950px-->
+        <div class="header_wrapper cf">
+            <!--start logo column-->
+            <div class="column"><a href="/" title="adidas 阿迪达斯官网 首页" class="adidasLogo"><img src="https://www.adidas.com.cn/skin/frontend/arvato/default/imgs/logo.png" alt="adidas阿迪达斯官网 首页" /></a></div>
+            <!--end logo column-->
+                <div class="r3contactus fr">
+                    <script type="text/javascript">  
+                        function adidasopenwindow(url,name,iWidth,iHeight)  
+                        {   
+                        var iTop = (window.screen.height-30-iHeight)/2; //获得窗口的垂直位置;  
+                        var iLeft = (window.screen.width-10-iWidth)/2; //获得窗口的水平位置;  
+                        window.open(url,name,'height='+iHeight+',,innerHeight='+iHeight+',width='+iWidth+',innerWidth='+iWidth+',top=0,left='+iLeft+',toolbar=no,menubar=no,scrollbars=auto,resizeable=no,location=no,status=no');  
+                        }  
+                    </script> 
+                    <a style="padding-right:10px;color:#ffffff;" href="javascript:void(0);" onclick="adidasopenwindow('http://adidas.800teleservices.com.cn/AdidasChat/WebPages/CM/ChatCustomer.html', 'newwindow', '900','600')" ><b>400-999-5999</b></a>&nbsp;(仅支持中文) 9:30-20:00 
+                </div>
+        </div>
+        <!--end wrapper min-width:950px-->
+    </div>
+    <!--end black background header-->
+</div>
+<div class="sticky_proxy" style="height:6px;">&nbsp;</div>
+
+<!--start checkoutBox-->
+<div class="checkoutBox">
+        <!--start wrapper min-width:950px-->
+        <div class="wrapper cf">
+        <!--start left aside col4-1-->
+        <div class="col4-1">
+                        <h3 class="font24">配送信息</h3>
+                         <!--start shipping address info-->
+            <div class="shippingAddrBox">
+                <span class="cf">
+                        <em class="shippingTit fl">收货人：</em>
+                    <em class="fl shippingCont"> 张三</em>
+                </span>
+                <span class="cf">
+                        <em class="shippingTit fl">配送地址：</em>
+                    <em class="fl shippingCont"> 广东省潮州市潮安县广东省深圳市龙岗区某某街道某某楼</em>
+                </span>
+                <span class="cf">
+                        <em class="shippingTit fl">配送方式：</em>
+                    <em class="fl shippingCont">
+                                                <b class="shippType">
+                            普通快递                            </b>
+                            <b class="shipPrice">¥0</b>
+                                            </em>
+                </span>
+                <span class="cf">
+                        <em class="shippingTit fl">联系方式：</em>
+                    <em class="fl shippingCont">张三，12345678912，022--8888888</em>
+                </span>
+                <span class="cf">
+                        <em class="shippingTit fl">送货备注：</em>
+                    <em class="fl shippingCont">请及时送达，谢谢！</em>
+                </span>
+            </div>
+                         <!--end shipping address info-->
+            <!--start order confirm pay method-->
+            <div class="orderConfirmPayMethod">
+                <h3 class="font24">支付方式</h3>
+                <span class="cf">
+                        <em class="shippingTit fl">在线支付：</em>
+                    <em class="fl shippingCont"><img src="https://www.adidas.com.cn/skin/frontend/arvato/default/images/checkout/logo_alipay.jpg"/></em>
+                </span>
+                                  <div class="cf mt30">
+                    <a href="https://mapi.alipay.com/gateway.do?_input_charset=utf-8&logistics_fee=0&logistics_payment=BUYER_PAY&logistics_type=EXPRESS&notify_url=https%3A%2F%2Fwww.adidas.com.cn%2Falipay%2Fpayment%2Fconfirm%2F&out_trade_no=8504664183&partner=2088801058693440&payment_type=1&paymethod=motoPay&price=658.00&quantity=1&return_url=https%3A%2F%2Fwww.adidas.com.cn%2Falipay%2Fpayment%2Fsuccess%2F&seller_email=shopadidascn2012%40gmail.com&service=create_direct_pay_by_user&subject=8504664183&sign=45aac193cdf29bd890a956b9273b4d81&sign_type=MD5" title="立即支付" class="btnCommon btnBlueLinear btnArrow w160 fl">立即支付<em></em></a>
+                </div>
+            </div>
+            <!--end order confirm pay method-->  
+            </div>
+            <!--end left aside col4-1-->
+           
+            <div class="col4 last">
+            <!--start right aside col4 订单摘要-->
+             <!--start right aside col4-->
+ <script>
+            var  utagProductId=[];
+            var  utagProductModelId=[];
+            var  utagProductName=[];
+            var  utagProductPrice=[];
+            var  utagProductQuantity=[];
+       </script>
+        <div class="orderSummary">
+                                                                <h3>订单摘要：<small>共1件</small></h3>
+                <div class="contentBox">
+                    	<div class="item">
+                                商品总额
+                                <span>¥658.00</span>
+                        </div>
+                        <div class="item">
+                                优惠总额
+                                <span>-¥0.00</span>
+                        </div>
+                        <div class="item delivery">
+                                运费
+                                <span>¥0.00</span>
+                        </div>
+                       	                        <div class="item total">
+                                商品总计
+                                <span>¥658.00</span>
+                        </div>
+                        <div class="proList"> 
+                            <ul>                            
+                                                                                                     
+
+<li>
+    <div class="img"><img src="https://www.adidas.com.cn/media/catalog/product/cache/1/thumbnail/120x/9df78eab33525d08d6e5fb8d27136e95/2/c/2c_950.jpg"/></div>
+    <div class="text">
+         <!-- 预售MARK --> 
+                <p class="name">跑步 女子 跑步紧身裤 黑 </p>
+        <p class="info">B47765</p>
+        <p class="info">颜色：黑</p>
+        <p class="info">尺码：
+                                                                                                                        A/M                                                                                        </p>
+        <br />
+        <p class="price">2x <span>¥329</span></p>
+		<p class="price">小计: <span>¥658</span></p>
+	</div>
+</li>
+	
+                                      <script>
+						               								                    utagProductId.push("B47765");
+						                    utagProductModelId.push("BUF64");
+						                    utagProductName.push("跑步 女子 跑步紧身裤 黑 B47765");
+						                    utagProductPrice.push("329.0000");
+						                    utagProductQuantity.push("2")
+						               </script>
+                                                                                            </ul>
+                        </div>
+                </div>
+        </div>
+<!--end right aside col4-->
+  
+<script>
+    console.log(utagProductId);
+    console.log(utagProductModelId);
+    console.log(utagProductName);
+    console.log(utagProductPrice);
+    console.log(utagProductQuantity);
+    var utag_data = {
+		customer_id  : '',
+		order_cart_id : 1086386,
+		page_name  : 'ORDER REVIEW',
+		page_type  : 'CHECKOUT',
+		product_id : utagProductId,
+		product_model_id : utagProductModelId,
+		product_name :utagProductName,
+		product_price : utagProductPrice,
+		product_quantity : utagProductQuantity
+		};
+
+(function(a,b,c,d){
+	a='//www.adidas.com.cn/skin/frontend/arvato/default/js/utag/utag0208.js';
+	b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+	a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+	})();		
+</script>   
+            <!--end right aside col4 订单摘要-->
+            <!--help start -->
+            <div class="infoBox">
+                		<h4>帮助？</h4>
+                		<a href="http://www.adidas.com.cn/directory/">关于订单</a><br />
+                		<a href="http://www.adidas.com.cn/directory/">验收验货</a><br />
+                		<a href="http://www.adidas.com.cn/directory/">物流配送</a><br />
+                		<a href="http://www.adidas.com.cn/directory/">售后服务</a>
+                	</div>            <!--help end-->
+            <div class="infoBox">
+                    <h4>我们接受下列付款方式</h4>
+                    <img src="https://www.adidas.com.cn/skin/frontend/arvato/default/release_three/img/pay.jpg"/>
+            </div>
+            </div>
+    </div>
+    <!--end wrapper min-width:950px-->
+
+</div>
+<!--end checkoutBox-->
+  <div class="footBox">
+    <!--start #363738 background footer-->
+    <div class="footBot">
+    	<!--start wrapper min-width:950px-->
+    	<div class="wrapper cf">                  
+            <div class="copyRight">
+                <a href="http://www.adidas.com.cn/privacy-policy" title="隐私条款">隐私条款</a>
+                <span>苏ICP备14048805号-1</span>
+                <span>©2016 adidas</span>
+            </div>
+        </div>
+        <!--end wrapper min-width:950px-->
+    </div>
+    <!--end #363738 background footer-->
+</div>
+
+<!--start closePage popup-->
+<div class="popup closePage">
+    <div class="popupContentBox">
+        <a href="javascript:;" title="关闭" class="popCloseBtn closePop">关闭</a>
+        <div class="popupContent" tabindex="-1">
+            <span class="title">离开此网页</span>
+            <div class="info">您的设计将不会被保存</div>
+            <div class="buttonset">
+                <a href="#" class="continue btnCommon btnBlueLinear btnArrow">不保存继续</a>
+                <a href="javascript:;" class="cancel btnCommon btnBlueLinear closePop">取消</a>
+            </div>
+        </div>
+    </div>
+    <div class="closePageBg"></div>
+</div>
+    	                    	    <noscript><img src="https://www.adidas.com.cn/akam/10/pixel_11c9e021?a=dD03MGFjMmNmYjU2M2E0MjFiMTc1ZTA5MzQ5MDk4NzlhZjExYmU0YWEzJmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript></body>
+</html>

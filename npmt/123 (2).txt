@@ -1,0 +1,215 @@
+
+var str = "aaabbbcccdddeeefff";
+str = str.match(/aaa(\S*)fff/)[1];
+alert(str);//结果bbbcccdddeee
+http://blog.csdn.net/paololiu/article/details/52514504 
+
+思路就是这个思路。
+http://open.163.com/special/opencourse/anthropology.html
+https://cnodejs.org/topic/54e96cf7ddce2d471403203f
+http://www.jb51.net/article/58819.htm
+http://www.cnblogs.com/chenrj23/p/4512853.html
+http://blog.csdn.net/zhangxinrun/article/details/5779572
+https://detail.tmall.com/item.htm?id=550877079979&ali_refid=a3_420432_1006:1150353538:N:%E8%BF%9E%E8%A1%A3%E8%A3%99:3998b5217ce43dc095047599680815b9&ali_trackid=1_3998b5217ce43dc095047599680815b9&spm=a230r.1.14.1.hXJ0ia&skuId=3369432969479
+https://github.com/egret-labs/egret-3d/
+https://unitygem.wordpress.com/shader-part-1/
+https://www.ricequant.com/courses/?utm_source=baidu&utm_term=alpha
+egret3d.js
+function ParticleEmitter(data, material)
+http://www.dataguru.cn/article-10672-1.html?union_site=baidu_c
+https://wenku.baidu.com/view/9d6a73f9f90f76c661371acc.html
+1、更新到最新版把UI的Bug解决了。原作者不帮我们改。
+2、用ES6>TS，整理一遍引擎代码。
+3、做工具。桌面版用electron。UI框架用react>polymer。
+C:\Users\gh\Documents\Tencent Files\787694154\FileRecv\MobileFile
+http://www.juxi10.com/index.php
+LJPdtPeakedNessArena.cs
+LJPanelPeakArenaFightRecord.cs
+1.hongdian
+2.chonggou
+3.huifang
+{"ChatId":"300150027","Id":"8c79e8d4-0860-4d63-940c-190867ed0cdf","SignId":0,"fReConnect":4}dropDownEnum
+{"ConfigId":0,"Attachment":"3|2|100|0","Title":"For Our Core User","Content":"sssssss","UserId":0,"OptType":0,"SignId":0,"fReConnect":4}
+http://muchong.com/html/200712/652578.html 
+狗屁不懂也敢瞎比比。人是不断在吃鼻涕的。每时每刻粘膜都会分泌粘液，也就是鼻涕，在粘液纤毛输送系统的驱赶下，鼻涕会不断流向咽喉，然后进入消化系统。吃鼻屎其实与吃鼻涕相似，真心来说只是难以理解，但却更接近人体自然循环。鼻涕中有呼吸道生态环境的菌群，而且有各种iga，流向消化道，构成了呼吸道菌群与消化道菌群的同步。而且鼻涕中免疫物质也会与肠道的免疫物质进行作业，这实际上是非常完美的微生态行为。
+量化投资 opencv 法考
+https://apps.facebook.com/locotitans/
+6000 4.6 开服 4.1 停服12:23 2017/3/30
+private void SyncInfo()
+弹性打卡制度：9:30-10:00、18:30-19:00为弹性打卡时间，员工在此时段内打卡
+均记为正常考勤。（例：上午9:42分到岗打卡，下班打卡时间为18:42）
+1．? 定义：
+1） 迟到：员工在规定上班时间晚于2小时之内到达公司为迟到；
+2） 早退：员工在规定下班时间前早于2小时之内离开公司为早退。
+2．? 迟到及早退的处理：
+1） 一类迟到/早退：迟到/早退10分钟以内的为一类迟到/早退，每次扣款10元；
+2） 二类迟到/早退：迟到/早退10分钟至30分钟以内的为二类迟到/早退，每次扣款50元；
+3） 三类迟到/早退：迟到/早退30分钟至90分钟以内的为三类迟到/早退，每次扣款80元；
+4） 四类迟到/早退：迟到/早退90分钟至120分钟以内的为四类迟到/早退，每次扣款150元。
+每人每个月允许两次一类迟到
+else if (id == 0xc0)
+            {
+                logic = new LJUILogicMazeEnemyTroops(id, new LJUIPanelMazeEnemyTroops(resId));
+            }
+国瑞数码安全系统有限公司
+王奕凯<wyklion@qq.com> 2017/3/17 16:51:47
+SS改密码了。
+drogon3d1907
+王奕凯<wyklion@qq.com> 2017/3/17 16:53:34
+
+svn://192.168.1.200/public/Titan/UI界面优化时间安排表.xlsx
+播放技能动画时候点击页签，粒子残留
+17314404.qcloudzhangcy269.com
+123.207.145.115
+118.89.233.99
+北京市朝阳区望京soho塔2 A座1907室
+var t = Time.formatTime(Time.getServerTime(), "mm:ss", true)
+sendTime: getFormatDate(new Date((msg.SendTime- 621355968000000000) / 10000 - 8 * 60 * 60 * 1000))
+压缩包方式提交了。需要清application。加?z=1可以用原来方式加载。默认按压缩包加载。
+
+之后如果修改资源的话还得先打包，到Tools里JSZiptools下先npm install一下。然后用node zipRes.js能打包，或者有啥资源修改先告诉我。遇到了再说。
+弄了个分支TitanV0.1。就是上正式facebook的版本。有明确要改的改在这个分支上。
+在Titan目录可以右键svn->switch到这个分支。
+V0.1上的修改也要同时改在主版本上。可以merge单次修改，要么手动改两遍，遇到跟我说。
+
+就是截止刚才，facebook版本固定了。主版本的改动不会上传，直到下一次再测完一个稳定版本再迁出。
+所有时间相关的，都不能直接调new Date。现在基本上用法都是拿到一个时间字符串，跟服务器时间比较相差的秒数。就用Time.timeStringToDiffInt。
+有别的用法Time实现不了再说。
+直接用new Date肯定是有问题的。
+
+blBtn.notEnabled = true;
+        blBtn.isGray = true;
+panel背景纹理花的都用这个this.addScale9Sprite2D("0.png", { x: 0, y : 0, plistUrl : g_res.info(10056),
+            capRect : new BABYLON.Vector4(0.49,0.49,0.51,0.51),
+            contentSize : new BABYLON.Size(400， 400),
+        });
+var r=0.93, g=0.86,b=0.57;
+                        document.onkeydown=function(event){
+                            var e = event || window.event;
+                            console.log(e.keyCode);
+
+                            if (e.keyCode == 49) {
+                                if (r+0.005<=1)
+                                r+=0.005;
+                                else r=1;
+                            }
+                            else if (e.keyCode == 50) {
+                                if (r-0.005>=0)
+                                r-=0.005;
+                                else r=0;
+                            }
+                            else if (e.keyCode == 51) {
+                                if (g+0.005<=1)
+                                g+=0.005;
+                                else g=1;
+                            }
+                            else if (e.keyCode == 52) {
+                                if (g-0.005>=0)
+                                g-=0.005;
+                                else g=0;
+                            }
+                            else if (e.keyCode == 53) {
+                                if (b+0.005<=1)
+                                b+=0.005;
+                                else b=1;
+                            }
+                            else if (e.keyCode == 54) {
+                                if (b-0.005>=0)
+                                b-=0.005;
+                                else b=0;
+                            }
+                            console.log(r,g,b);
+                            mark.color = new BABYLON.Color4(r, g, b, 1);
+                        }
+globalTransform
+getGlobalPosition
+Prim2DBase.prototype.getGlobalPosition
+BABYLON.Color4.FromHexString("#ffe6d4ff")
+You can also use the shortcut methods to move top/bottom: moveChildToTop, moveChildToBottom, moveToTop, moveToBottom.
+。。没有arial的情况。
+我们只用sans和lato。
+小写字母用大写变小的是sans。其他都是lato。
+368803966831485
+21001 21002 宝箱钥匙
+37001 宝箱
+index.html?t=1
+test 12345 aaa bbb
+每周五下班前填周报
+svn://192.168.1.200/public
+按现有格式提交。
+官网示例地址:
+http://h5.drogon3d.com
+LuckySlots地址：
+https://apps.facebook.com/locoluckyslots
+公司邮箱：例如：张三http://exmail.qq.com/login
+用户名：zhangchengyi@drogon.com
+初始密码：Zhangchenyi001
+新密码：227031zcy
+
+https://apps.facebook.com/drogontitan/
+https://fengche.co/
+风车账户：zhangchengyi@drogon.com
+风车密码：227031Zcy
+登录名：zhangsan@drogon3d.com
+初始密码：Zhangsan135
+https://fengche.co/projects/76108a16694c/users/3bb5c46f2396
+注：首次登录需要修改密码！
+公司联系方式
+电话：010-84770089
+传真：010-84770081
+net key:sohot21907
+
+相机：
+camera：正常3D相机，显示3D场景、战场等。ArcRotateCamera类型
+UIManager.meshCamera：在UI层之上显示3D模型用到的相机。ArcRotateCamera类型
+UIManager.topCamera：在UI上对应UI坐标的相机，显示UI上的粒子等。FreeCamera类型。
+
+UI：
+每个Panel都继承PanelBase。对应DPanel配表。
+PanelBase里会创建UIManger。传入参数useWorld默认false，useScreen默认true。
+UIManager中
+如果useScreen会创建一个screenCanvas（ScreenSpaceCanvas2D），渲染顺序是在UIManager.meshCamera,renderingGroupId=1之上。设计尺寸为1136*640，不需要考虑缩放问题。默认addSprite等不加parent就是加在这个screenCanvas上。
+如果useWorld会创建一个屏worldCanvas（ScreenSpaceCanvas2D），渲染顺序是在camera,renderingGroupId=3之上。addSprite等需要手动写parent:uiManager.worldCanvas。
+addSprite这一类方法会先checkSettings。默认加上marginAlignment:"h:center, v:center"。默认把x/y转成marginLeft/marginBottom。如果加noMargin:true就不转x/y。如果h:right或者v:top，就得写对应的marginRight和marginTop。如果创建完后还需要改座标，就得用margin.setLeft等方法或修改margin.leftPixels等。
+
+渲染顺序：
+第一层：3D场景。camera。
+第二层：UI的worldCanvas。在camera整体显示的上层显示。
+第三层：UI上的3D模型在这里显示（粒子也可以）。相机使用UIManager.meshCamera。renderginGroupId不设默认为0。
+第四层：UI的screenCanvas。在UIManager.meshCamera的rendergingGroupId=1之后显示。
+第五层：UI的screenCanvas之上又显示3D模型。还是UIManager.meshCamera相机，但rendergingGroupId是2或3。
+第六层：配合UI坐标的粒子。使用相机UIManager.topCamera。
+
+addSprite这一类方法会先checkSettings。默认parent为screenCanvas。默认align为UIManger.CC。通过align会设marginAlignment和origin，并且把x,y转成对应的marginLeft/marinRight/marginBottom/marginTop。如果之后要修改使用setX(ui,x)/setY/setXY(ui,x,y)。如果Animation等需要用属性值修改的，使用ui.margin.leftPixels/bottomPixcels等。
+旧代码指定了marginAlignment的，只把x/y转成marginLeft/marginBottom，没法处理right/top。尽量改成align。
+
+用align/x/y能简单点。如果是right，x会对应转成marginRight=-x。之前写的marginAlignment和x/y只要不是right/top也能用。
+但是addText2D的align:"left"这种全都不要用已经删了方法。用到的我已成改UIManager.LC这样的。
+
+之前看到很多listView位置不对。
+                listView.addCell(cell);
+这个cell必须是左下角对齐不用设x/y。加align:UIManager.LB。
+
+TipUIConfirm.js
+
+有的UI可能需要弹出跟DPanel里配表不一致可以用createByConfig
+PMap PDropBagSetting datautil.js
+PMysticCastle.txt PShopMystucCastle.txt
+GetCharLabyrinthInfo
+UIAtlasPanelShareBg
+LJUIPanelManager.cs
+this.OnDataQueryPlayerMe(g_data);
+18702214015
+17875043719
+LJUIHelperFight
+
+敏感词提交了。
+进界面（聊天、评论）时要ChatWordsReplace.Instance.init等回调。(加载配表）
+然后
+var result = {};
+var newTxt = ChatWordsReplace.Instance.replaceBadWord(txt, result);
+result.replaced是否替换过。
+聊天评论应该不用判断直接显示替换完的内容（敏感词换成*）
+
+https://apps.facebook.com/drogontitan/
+https://fengche.co/

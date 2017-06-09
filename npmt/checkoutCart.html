@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html xmlns:wb="http://open.weibo.com/wb">
+	<head>
+	<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>阿迪达斯官方商城</title>
+<meta name="description" content="欢迎来到adidas 阿迪达斯中国官方旗舰店！在线销售足球、跑步、篮球、训练、网球、户外、高尔夫、adidas by Stella McCartney系列运动装备，及adidas Originals、NEO、SLVR经典休闲时尚产品。" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="keywords" content="adidas,阿迪达斯,阿迪达斯中国, adidas 中国,阿迪达斯官方旗舰店,adidas官方旗舰店,adidas三叶草,adidas Originals,三叶草,足球,篮球,网球,adidas鞋,阿迪达斯鞋,adidas服饰,阿迪达斯服饰,阿迪达斯足球,跑步,训练,SLVR,户外,NEO,滑板,Porsche Design,高尔夫,STELLA MCCARTNEY" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="icon" href="https://www.adidas.com.cn/skin/frontend/arvato/default/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="https://www.adidas.com.cn/skin/frontend/arvato/default/favicon.ico" type="image/x-icon" />
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'https://www.adidas.com.cn/js/blank.html';
+    var BLANK_IMG = 'https://www.adidas.com.cn/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="https://www.adidas.com.cn/skin/frontend/arvato/default/style/common.css" media="all" />
+<link rel="stylesheet" type="text/css" href="https://www.adidas.com.cn/skin/frontend/arvato/default/font/fonts.css" media="all" />
+<link rel="stylesheet" type="text/css" href="https://www.adidas.com.cn/skin/frontend/arvato/default/style/r3common.css" media="all" />
+<link rel="stylesheet" type="text/css" href="https://www.adidas.com.cn/skin/frontend/arvato/default/release_three/style/checkout.css" media="all" />
+<script type="text/javascript" src="https://www.adidas.com.cn/skin/frontend/arvato/default/js/common/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="https://www.adidas.com.cn/skin/frontend/arvato/default/js/common/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="https://www.adidas.com.cn/skin/frontend/arvato/default/js/common/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="https://www.adidas.com.cn/skin/frontend/arvato/default/js/frame/jquery-ui-1.10.4.custom.js"></script>
+<script type="text/javascript" src="https://www.adidas.com.cn/skin/frontend/arvato/default/js/frame/arvato_touch.js"></script>
+<script type="text/javascript" src="https://www.adidas.com.cn/skin/frontend/arvato/default/js/frame/carousel_images.js"></script>
+<script type="text/javascript" src="https://www.adidas.com.cn/skin/frontend/arvato/default/js/frame/touchslider.js"></script>
+<script type="text/javascript" src="https://www.adidas.com.cn/skin/frontend/arvato/default/js/common/common_mini_shoppingcar.js"></script>
+<script type="text/javascript" src="https://www.adidas.com.cn/skin/frontend/arvato/default/js/common/common_product_struct.js"></script>
+<script type="text/javascript" src="https://www.adidas.com.cn/skin/frontend/arvato/default/js/common/common_search.js"></script>
+<script type="text/javascript" src="https://www.adidas.com.cn/skin/frontend/arvato/default/js/frame/jquery.flexslider.js"></script>
+<script type="text/javascript" src="https://www.adidas.com.cn/skin/frontend/arvato/default/js/frame/page_image_asyn.js"></script>
+<script type="text/javascript" src="https://www.adidas.com.cn/skin/frontend/arvato/default/release_three/js/common.js"></script>
+<script type="text/javascript" src="https://www.adidas.com.cn/skin/frontend/arvato/default/release_three/js/frame.js"></script>
+<script type="text/javascript" src="https://www.adidas.com.cn/skin/frontend/arvato/default/release_three/js/checkout1.js"></script>
+<script src="//tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["CN"];
+//]]>
+</script>
+<script type='text/javascript'>
+
+$(function(){
+	    $.getJSON("https://www.adidas.com.cn/api/ajaxheader.php", function(data) {
+	        if(data.flag !=0){
+	            $('.loginGroup .login_redesign').text(data.name);
+	        }else{
+	        	$('.loginGroup .login_redesign').text('登录');
+	        }
+	        if(data.qty == 0){
+                $(".manicarBox").hide();
+                $(".emptyCart").show();
+            }else{
+                $(".emptyCart").hide();
+				$(".minicart .minicartNum .miniNum").html(data.qty);
+				$(".minicart").addClass("bgMiniCart");
+            }
+	    });
+})
+
+function getPopUrl(key){
+	if(key == 'addCart'){
+		return 'https://www.adidas.com.cn/specific/Ajaxshowuserlogin/successAddCart/' ;
+	}
+	if(key == 'addCartFail'){
+		return 'https://www.adidas.com.cn/specific/Ajaxshowuserlogin/mixedAddCart/' ;
+	}
+	if(key == 'miniShoppingcar'){
+		return 'https://www.adidas.com.cn/skin/frontend/arvato/default/' + 'component/popup_minishoppingcar.php' ;
+	}
+	if(key=="headAccount"){
+            
+	} 
+        if(key=="registerSuccess"){
+            return 'https://www.adidas.com.cn/skin/frontend/arvato/default/' + 'component/popup_register_success.php' ;
+        }
+    if(key=="subscribeSuccess"){
+        return 'https://www.adidas.com.cn/skin/frontend/arvato/default/' + 'component/popup_subscribe_success.php' ;
+    }
+     if(key=="r3scEditKey"){
+        return 'https://www.adidas.com.cn/specific/Ajaxshowuserlogin/r3shoppingCart/';
+       // return '/skin/frontend/arvato/default/release_three/component/popup_r3shoppingCart.html' ;
+        
+    }
+}
+function getPopUrlUser(callback){
+   return false;
+}
+function getAjaxUrl(key){
+	if(key =='miniShoppingcar'){
+		return  {
+			url:"https://www.adidas.com.cn/specific/Ajaxshoppingcart/arvatoAjaxCart/",type:"GET",data:{}
+		};
+	}
+	if(key =='search'){
+		var q =  jQuery('#arvato_q').val() ; 
+		return {
+			url:"https://www.adidas.com.cn/catalogsearch/ajax/suggest/",type:"GET",data:{"q":q}
+		};
+	}
+}
+
+
+</script>
+<!--  
+<script type="text/javascript" src="//tags.tiqcdn.com/utag/adidas/adidaschina/prod/utag.sync.js"></script>
+ -->
+    	<script>bazadebezolkohpepadr="298443058"</script><script type="text/javascript" src="https://www.adidas.com.cn/akam/10/11c9e021" defer></script></head>
+    <body>
+    		
+    	    		<!--start pop bg-->
+			<div class="addCartOverlay"></div>
+			<!--end pop bg-->
+    		
+    		    		<!--start 面包屑-->
+<div class="checkoutBcBox cf">
+        <!--start wrapper min-width:950px-->
+        <div class="wrapper">
+                <span class="cur"><em>1</em>填写订单</span>
+        <span class=""><em>2</em>订单确认</span>
+                <span class="checkComplete"><em>3</em>支付订单</span>
+    </div>
+    <!--end wrapper min-width:950px-->
+</div>
+<!--end 面包屑--><div class="headerBox">
+	<!--start black background header-->
+	<div class="headTop">
+        <!--start wrapper min-width:950px-->
+        <div class="header_wrapper cf">
+            <!--start logo column-->
+            <div class="column"><a href="http://www.adidas.com.cn/" title="adidas 阿迪达斯官网 首页" class="adidasLogo"><img src="https://www.adidas.com.cn/skin/frontend/arvato/default/imgs/logo.png" alt="adidas阿迪达斯官网 首页" /></a></div>
+            <!--end logo column-->
+            <div class="r3contactus fr">
+                <script type="text/javascript">  
+                function adidasopenwindow(url,name,iWidth,iHeight)  
+                {   
+                var iTop = (window.screen.height-30-iHeight)/2; //获得窗口的垂直位置;  
+                var iLeft = (window.screen.width-10-iWidth)/2; //获得窗口的水平位置;  
+                window.open(url,name,'height='+iHeight+',,innerHeight='+iHeight+',width='+iWidth+',innerWidth='+iWidth+',top=0,left='+iLeft+',toolbar=no,menubar=no,scrollbars=auto,resizeable=no,location=no,status=no');  
+                }  
+                </script> 
+                <a style="padding-right:10px;color:#ffffff;" href="javascript:void(0);" onclick="adidasopenwindow('http://adidas.800teleservices.com.cn/AdidasChat/WebPages/CM/ChatCustomer.html', 'newwindow', '900','600')" ><b>400-999-5999</b></a>&nbsp;(仅支持中文) 9:30-20:00 
+              
+               
+            </div>
+            
+        </div>
+        <!--end wrapper min-width:950px-->
+    </div>
+    <!--end black background header-->
+</div>
+<div class="sticky_proxy" style="height:6px;">&nbsp;</div>
+<!--start login & register -->
+        <div class="checkoutBox">
+        	<!--start wrapper min-width:950px-->
+        	<div class="wrapper cf">
+        		            	<!--start left aside col4-1-->
+            	<div class="col4-1">
+				    <form action="https://www.adidas.com.cn/yancheckout/process/saveShippingAndPayment/" method="post" id="co-shipping-form" class="yan-chekcout" >
+				    <h3 class="font24">配送地址</h3>
+	<div class="w200 mt20">
+	<div class="commonInputBox">
+		<input type="text" class="textInput commonInput required"  id="shipping_firstname" name="shipping[firstname]" placeholder="* 收货人"  value="" />
+	</div>
+</div>
+<div class="w200 mt20">
+	<div class="commonInputBox">
+		<input type="text" id="shipping_email" class="textInput commonInput required"  name="shipping[email]" value="" placeholder="* 邮箱" />
+	</div>
+</div>
+<input type="hidden" id="shipping_country_id" class="validate-select" name="shipping[country_id]" value="CN" />
+<div class="mt20 shipAddrSelect cf">
+   	<div class="copySelect" id="shipping_region_div">
+		<select id="shipping_region_id" name="shipping[region_id]" title="省份" class="city required" style="display:none;">
+			<option value="">请选择省份或地区</option>
+						<option value="485" >北京</option>
+						<option value="515" >天津</option>
+						<option value="486" >河北省</option>
+						<option value="487" >山西省</option>
+						<option value="488" >内蒙古</option>
+						<option value="489" >辽宁省</option>
+						<option value="490" >吉林省</option>
+						<option value="491" >黑龙江</option>
+						<option value="492" >上海</option>
+						<option value="493" >江苏省</option>
+						<option value="494" >浙江省</option>
+						<option value="495" >安徽省</option>
+						<option value="496" >福建省</option>
+						<option value="497" >江西省</option>
+						<option value="498" >山东省</option>
+						<option value="499" >河南省</option>
+						<option value="500" >湖北省</option>
+						<option value="501" >湖南省</option>
+						<option value="502" >广东省</option>
+						<option value="503" >广西</option>
+						<option value="504" >海南省</option>
+						<option value="505" >重庆</option>
+						<option value="506" >四川省</option>
+						<option value="507" >贵州省</option>
+						<option value="508" >云南省</option>
+						<option value="509" >西藏</option>
+						<option value="510" >陕西省</option>
+						<option value="511" >甘肃省</option>
+						<option value="512" >青海省</option>
+						<option value="513" >宁夏</option>
+						<option value="514" >新疆</option>
+					</select>
+		<input type="text" id="shipping_region" name="shipping[region]" value="" title="省份" style="display:none;" />
+	</div>
+   <div class="copySelect"  id="shipping_city_div">
+                		<select id="shipping_city_id" name="shipping[city_id]"  class="province required" >
+						<option value="">请选择城市</option>
+					</select>
+	</div>
+   <div class="copySelect"  id="shipping_district_div" >
+		<select id="shipping_district_id" name="shipping[district_id]" title="区" class="address required" >
+					<option value="">请选择区</option>
+				</select>
+	</div>
+	<!--start other select-->
+<div class="addrOtherSlect fl" >
+	<div class="commonInputBox w160 h30 fl" style="display:none">
+		<input type="text" class="textInput commonInput required" title="城市" name="shipping[city]" value="城市"   id="shipping_city"  />
+	</div>
+		
+	<div class="commonInputBox w160 h30 fl ml10" style="display:none">
+		<input type="text" class="textInput commonInput required" title="区"  name="shipping[district]" value="区"  id="shipping_district" />
+	</div>
+</div>
+<!--end other select-->
+</div>
+<div class="w500 mt20">
+	<div class="commonInputBox">
+		<input type="text" placeholder="* 详细地址"  name="shipping[street][]" id="shipping_street1" value="" class="textInput commonInput required" />
+	</div>
+</div>
+<div class="w200 mt20">
+	<div class="commonInputBox">
+		<input type="text"  placeholder="* 邮编"  name="shipping[postcode]" id="shipping_postcode" value="" class="textInput commonInput required" />
+	</div>
+</div>
+<div class="w500 shipTel cf mt20">
+	<div class="commonInputBox fl w160">
+		<input type="text" name="shipping[mobile]" value="" placeholder="* 手机"  class="textInput commonInput  mobile" id="shipping_mobile" />
+	</div>
+	<div class="fl fixTelTxt">或 固定电话</div>
+	 <div class="commonInputBox fl w65">
+		<input type="text" name="shipping[tel_areacode]" value=""  class="textInput commonInput areacode" id="shipping_tel_areacode" />
+	</div>
+	<div class="fl fixTelSpilt">-</div>
+	 <div class="commonInputBox fl w160">
+		<input type="text" name="shipping[telephone]" value="" class="textInput commonInput telephone" id="shipping_telephone" />
+	</div>
+</div>     
+<input type="hidden" name="shipping[save_in_address_book]" value="1" id="shipping_save_in_address_book" />
+<input type="hidden" name="shipping[use_for_shipping]" value="1" id="shipping_use_for_shipping" />
+<input type="hidden" name="shipping[update_region]" value="0" id="shipping_update_region" />
+<input type="hidden" id="shipping[primary_shipping]" name="shipping[primary_shipping]" value="1">
+<input type="hidden" id="shipping[primary_billing]" name="shipping[primary_billing]" value="1">
+<input type='hidden' value='https://www.adidas.com.cn/' id='baseurl'/>
+<!--start shipping address info-->
+<div class="w500 mt20" > <span class="checkoutInputTit">送货备注</span>
+	<div class="commonInputBox">
+		<textarea class="textareaInput commonInput" title="送货备注"  name="shipping[delivery_memo]" rows="5" cols="45" id="shipping_delivery_memo"></textarea>
+	</div>
+	<span class="shipAdrRemarkTip">请限制在120字数以内</span>
+</div>
+<!--end shipping address info-->
+<script>
+//送货备注  
+$(function(){
+    $("#shipping_delivery_memo").blur(function(){
+        var shipping_delivery_memo = $("#shipping_delivery_memo").val().replace(/\s/g, "");
+          var deliveryLength=shipping_delivery_memo.length;
+          if (deliveryLength > 120) {
+              $(this).parent('.commonInputBox').find('.errormessage').remove();
+              $(this).parent('.commonInputBox').addClass('errorInput');
+              $(this).parent('.commonInputBox').append('<span class="errormessage">您输入的内容过长</span>');
+
+          }else{
+              if ($(this).parent('.commonInputBox').hasClass('errorInput')) {
+                  $(this).parent('.commonInputBox').removeClass('errorInput');
+                  $(this).parent('.commonInputBox').find('.errormessage').remove();
+              }
+          }
+    });
+    $("#shipping_delivery_memo").focus(function() {
+      if ($(this).parent('.commonInputBox').hasClass('errorInput')) {
+          $(this).parent('.commonInputBox').removeClass('errorInput');
+          $(this).parent('.commonInputBox').find('.errormessage').remove();
+      }
+    });
+});
+
+</script>
+<script type="text/javascript" src="https://www.adidas.com.cn/skin/frontend/arvato/default/js/validate.js"></script>   <!--start payment-->
+<style>
+	.updataClassAdress .delivery_typep{height:auto}
+	 .updataClassAdress .delivery_typep .text{height:auto;padding-bottom:10px}
+	.deliveryM .deliveryT2 .text b{ font-weight: bold}
+</style>
+<div class="deliveryM borderTop updataClassAdress">
+	<h3 class="font24">配送方式</h3>
+	<div class="checkStock radioBionic radioBox cf radioEvent">
+		
+		<p class="deliveryT1 delivery_typep cf" style="font-weight:normal"><input name="delivery_type" type="radio" value="Normal" checked="checked" /> <b>普通快递</b>  完成订单支付后48小时内安排发货。</p>
+			</div>
+</div>
+<!--end payment-->
+<script>
+var global_hypesale_flag = 'no';
+jQuery(function(){
+	var _thisBlock=$(".addressList .checkStock .addressItem.active");
+	if(_thisBlock.index()!=0){
+		 var $one_li = $(".addressList .checkStock .addressItem:eq(0)");
+		 _thisBlock.insertBefore($one_li);
+	}
+	$(".delivery_typep").click(function(){
+		$common.loading.show();
+		var vd=$(this).find("input").val();
+		location.href="https://www.adidas.com.cn/yancheckout/process/updateDeliveryType/"+"?delivery_type="+vd+'&hypersale='+global_hypesale_flag;
+	});
+	$(".addressItem p").click(function(){
+		$common.loading.show();
+		var v=$(this).find("input").val();
+		location.href="https://www.adidas.com.cn/yancheckout/process/updateShippingAddress/"+"?shipping_address_id="+v+'&hypersale='+global_hypesale_flag;
+	});
+	
+	$('#comfirm_order').click(function(){
+		if($(this).hasClass("btnMidGray"))return false;
+                if($("#agreefb").attr("checked")){
+                    //发票抬头
+                    var fapiaoTitle = $("#fapiao_title").val().replace(/\s/g, "");
+                    var titleLength=fapiaoTitle.length;
+                    if (titleLength > 50) {
+                        $("#fapiao_title").parent('.commonInputBox').find('.errormessage').remove();
+                        $("#fapiao_title").parent('.commonInputBox').addClass('errorInput');
+                        $("#fapiao_title").parent('.commonInputBox').append('<span class="errormessage">您输入的内容过长</span>');
+                        return false;
+                    }
+                    //发票备注
+                    var fapiaoMemo = $("#fapiao_memo").val().replace(/\s/g, "");
+                    var memoLength=fapiaoMemo.length;
+                    if (memoLength > 120) {
+                        $("#fapiao_memo").parent('.commonInputBox').find('.errormessage').remove();
+                        $("#fapiao_memo").parent('.commonInputBox').addClass('errorInput');
+                        $("#fapiao_memo").parent('.commonInputBox').append('<span class="errormessage">您输入的内容过长</span>');
+                        return false;
+                    }
+                   
+                }  
+                //送货备注               
+                var shipping_delivery_memo = $("#shipping_delivery_memo").val().replace(/\s/g, "");
+                var deliveryLength=shipping_delivery_memo.length;
+                if (deliveryLength > 120) {
+                    $("#shipping_delivery_memo").parent('.commonInputBox').find('.errormessage').remove();
+                    $("#shipping_delivery_memo").parent('.commonInputBox').addClass('errorInput');
+                    $("#shipping_delivery_memo").parent('.commonInputBox').append('<span class="errormessage">您输入的内容过长</span>');
+                    return false;
+                }
+		if(validate()){
+			$("#shipping_yancheckout_page").val("");
+			$(this).addClass('btnMidGray');
+			$('#co-shipping-form').submit();
+			
+		}else{
+			 $('body,html').animate({scrollTop:0},1000);
+		}
+		
+	});
+	//新增地址start
+	$(".r3c1EditBtn").click(function(){
+			$common.loading.show();
+            $('#comfirm_order').addClass("btnMidGray");
+            $("#comfirm_order").attr("disabled", true); 
+			var _v=$(this).attr('data');
+			if(_v<1){_v=0;}
+			if(_v==0){$("#poptile").text('新增地址')}else{$("#poptile").text('编辑地址')}
+			$.get(baseurl+'yancheckout/process/getAddress?address='+_v+'&hypersale='+global_hypesale_flag, function(result){
+			    $("#addressdiv").html(result);
+			    $(".popup.r3c1EditWrapper").show();
+			    $common.loading.hide();
+			    $("#addressdiv .copySelect").copySelect({isDefault:true,optionClick:function(dom,index){}});
+                if($('#comfirm_order').hasClass("btnMidGray")){
+                 	$('#comfirm_order').removeClass("btnMidGray");
+                }
+                $("#comfirm_order").attr("disabled", false);
+			});
+	});
+	//新增地址end
+})
+</script>    				<input type="hidden" name="token" value="b7721eba501a952739e4679ff0aa4d9a" />
+
+  
+                    <!--start payment-->
+                    <div class="checkPaymentBox borderTop">
+         <h3 class="font24">支付方式</h3>
+    <div id="payment-lists">
+                        
+                    <div class="checkStock radioBionic radioBox cf radioEvent">
+	<p  class="alipay" >
+	<input id="p_method_bank_ALIPAY" value='ALIPAY'  checked='checked'  name="payment[alipay_pay_bank]" title="支付宝" type="radio" />
+	<span><img src="https://www.adidas.com.cn/skin/frontend/arvato/default/images/checkout/logo_alipay.jpg" alt="支付宝"></span></p>
+	<p >
+	<input id="p_method_bank_BOCB2C" value='BOCB2C'  name="payment[alipay_pay_bank]" title="中国银行" type="radio" />
+	<span><img src="https://www.adidas.com.cn/skin/frontend/arvato/default/images/checkout/logo_zgyh.jpg" alt="中国银行"></span></p>
+	<p >
+	<input id="p_method_bank_ICBCB2C" value='ICBCB2C'  name="payment[alipay_pay_bank]" title="中国工商银行" type="radio" />
+	<span><img src="https://www.adidas.com.cn/skin/frontend/arvato/default/images/checkout/logo_zggsyh.jpg" alt="中国工商银行"></span></p>
+	<p >
+	<input id="p_method_bank_CMB" value='CMB'  name="payment[alipay_pay_bank]" title="招商银行" type="radio" />
+	<span><img src="https://www.adidas.com.cn/skin/frontend/arvato/default/images/checkout/logo_zsyh.jpg" alt="招商银行"></span></p>
+	<p >
+	<input id="p_method_bank_CCB" value='CCB'  name="payment[alipay_pay_bank]" title="中国建设银行" type="radio" />
+	<span><img src="https://www.adidas.com.cn/skin/frontend/arvato/default/images/checkout/logo_zgjsyh.jpg" alt="中国建设银行"></span></p>
+	<p >
+	<input id="p_method_bank_ABC" value='ABC'  name="payment[alipay_pay_bank]" title="中国农业银行" type="radio" />
+	<span><img src="https://www.adidas.com.cn/skin/frontend/arvato/default/images/checkout/logo_zgnyyh.jpg" alt="中国农业银行"></span></p>
+	<p >
+	<input id="p_method_bank_SPDB" value='SPDB'  name="payment[alipay_pay_bank]" title="上海浦东发展银行" type="radio" />
+	<span><img src="https://www.adidas.com.cn/skin/frontend/arvato/default/images/checkout/logo_pfyh.jpg" alt="上海浦东发展银行"></span></p>
+	<p >
+	<input id="p_method_bank_CIB" value='CIB'  name="payment[alipay_pay_bank]" title="兴业银行" type="radio" />
+	<span><img src="https://www.adidas.com.cn/skin/frontend/arvato/default/images/checkout/logo_xyyh.jpg" alt="兴业银行"></span></p>
+	<p >
+	<input id="p_method_bank_GDB" value='GDB'  name="payment[alipay_pay_bank]" title="广东发展银行" type="radio" />
+	<span><img src="https://www.adidas.com.cn/skin/frontend/arvato/default/images/checkout/logo_gfyh.jpg" alt="广东发展银行"></span></p>
+	<p >
+	<input id="p_method_bank_SDB" value='SDB'  name="payment[alipay_pay_bank]" title="深圳发展银行" type="radio" />
+	<span><img src="https://www.adidas.com.cn/skin/frontend/arvato/default/images/checkout/logo_szfzyh.jpg" alt="深圳发展银行"></span></p>
+	<p >
+	<input id="p_method_bank_CMBC" value='CMBC'  name="payment[alipay_pay_bank]" title="中国民生银行" type="radio" />
+	<span><img src="https://www.adidas.com.cn/skin/frontend/arvato/default/images/checkout/logo_zgmsyh.jpg" alt="中国民生银行"></span></p>
+	<p >
+	<input id="p_method_bank_COMM" value='COMM'  name="payment[alipay_pay_bank]" title="交通银行" type="radio" />
+	<span><img src="https://www.adidas.com.cn/skin/frontend/arvato/default/images/checkout/logo_jtyh.jpg" alt="交通银行"></span></p>
+	<p >
+	<input id="p_method_bank_CITIC" value='CITIC'  name="payment[alipay_pay_bank]" title="中信银行" type="radio" />
+	<span><img src="https://www.adidas.com.cn/skin/frontend/arvato/default/images/checkout/logo_zxyh.jpg" alt="中信银行"></span></p>
+	<p >
+	<input id="p_method_bank_CEBBANK" value='CEBBANK'  name="payment[alipay_pay_bank]" title="光大银行" type="radio" />
+	<span><img src="https://www.adidas.com.cn/skin/frontend/arvato/default/images/checkout/logo_zggdyh.jpg" alt="光大银行"></span></p>
+	<p >
+	<input id="p_method_bank_NBBANK" value='NBBANK'  name="payment[alipay_pay_bank]" title="宁波银行" type="radio" />
+	<span><img src="https://www.adidas.com.cn/skin/frontend/arvato/default/images/checkout/logo_nbyh.jpg" alt="宁波银行"></span></p>
+	<p >
+	<input id="p_method_bank_HZCBB2C" value='HZCBB2C'  name="payment[alipay_pay_bank]" title="杭州银行" type="radio" />
+	<span><img src="https://www.adidas.com.cn/skin/frontend/arvato/default/images/checkout/logo_hzyh.jpg" alt="杭州银行"></span></p>
+	<p >
+	<input id="p_method_bank_SHBANK" value='SHBANK'  name="payment[alipay_pay_bank]" title="上海银行" type="radio" />
+	<span><img src="https://www.adidas.com.cn/skin/frontend/arvato/default/images/checkout/logo_shyh.jpg" alt="上海银行"></span></p>
+	<p >
+	<input id="p_method_bank_SPABANK" value='SPABANK'  name="payment[alipay_pay_bank]" title="平安银行" type="radio" />
+	<span><img src="https://www.adidas.com.cn/skin/frontend/arvato/default/images/checkout/logo_panyh.jpg" alt="平安银行"></span></p>
+	<p >
+	<input id="p_method_bank_BJRCB" value='BJRCB'  name="payment[alipay_pay_bank]" title="北京农村商业银行" type="radio" />
+	<span><img src="https://www.adidas.com.cn/skin/frontend/arvato/default/images/checkout/logo_bjnsyh.jpg" alt="北京农村商业银行"></span></p>
+	<p >
+	<input id="p_method_bank_FDB" value='FDB'  name="payment[alipay_pay_bank]" title="富滇银行" type="radio" />
+	<span><img src="https://www.adidas.com.cn/skin/frontend/arvato/default/images/checkout/logo_fdyh.jpg" alt="富滇银行"></span></p>
+	<p >
+	<input id="p_method_bank_PSBC-DEBIT" value='PSBC-DEBIT'  name="payment[alipay_pay_bank]" title="中国邮政储蓄银行" type="radio" />
+	<span><img src="https://www.adidas.com.cn/skin/frontend/arvato/default/images/checkout/logo_zgyzyh.jpg" alt="中国邮政储蓄银行"></span></p>
+	<p >
+	<input id="p_method_bank_BJBANK" value='BJBANK'  name="payment[alipay_pay_bank]" title="北京银行" type="radio" />
+	<span><img src="https://www.adidas.com.cn/skin/frontend/arvato/default/images/checkout/logo_bjyh.jpg" alt="北京银行"></span></p>
+</div>
+<!--end payment-->
+<input id="p_method_alipay_payment_paymethod" value="bankPay" type="hidden" name="payment[alipay_pay_method]" />
+            <input name="shipping_method" type="hidden" value="carrier_bestway" id="s_method_tablerate" class="input"/>
+   </div></div>
+                    <!--end payment-->
+                    <!--start invoice inof-->
+					<!--start invoice inof-->
+<div class="invoiceInfo">
+    <div class="checkStock checkBox radioBionic cf radioEvent">
+        <p><input id="agreefb" name="fapiao[fapiao_required]"  type="checkbox"/>
+        <span>需要发票</span></p>
+    </div>
+    <div class="invoicePop">
+            <!--start invoice type-->
+        <div class="invoiceType checkStock radioBionic radioBox cf radioEvent">
+            <p><input id="02" checked="checked" name="fapiao[fapiao_type]" value="personal" type="radio"/><span>普通发票</span></p>
+            <p><input id="03"  name="fapiao[fapiao_type]" value="company"  type="radio"/><span>增值税发票</span></p>
+        </div>
+        <!--end invoice type-->
+        <!--start invoice input info-->
+        <div class="invoiceTit">
+            <span class="checkoutInputTit">发票抬头</span>
+            <div class="commonInputBox">
+                <input type="text" class="textInput commonInput"  name="fapiao[fapiao_title]"  id="fapiao_title"/>
+            </div>
+            <span class="shipAdrRemarkTip">请限制在50字数以内</span>
+        </div>
+        <!--end invoice input info-->
+        <!--start invoice remark info-->
+        <div class="mt20 invoiceTit">
+            <span class="checkoutInputTit">发票备注</span>
+            <div class="commonInputBox">
+                <textarea   name="fapiao[fapiao_memo]" class="textareaInput commonInput" id="fapiao_memo"></textarea>
+            </div>
+            <span class="shipAdrRemarkTip">请限制在120字数以内</span>
+        </div>
+        <!--end invoice remark info-->
+
+    </div>
+</div>
+<!--end invoice inof-->
+<script>
+
+$(function(){
+   //发票抬头
+  $("#fapiao_title").blur(function(){
+        var fapiaoTitle = $(this).val().replace(/\s/g, "");
+        var titleLength=fapiaoTitle.length;
+        if (titleLength > 50) {
+            $(this).parent('.commonInputBox').find('.errormessage').remove();
+            $(this).parent('.commonInputBox').addClass('errorInput');
+            $(this).parent('.commonInputBox').append('<span class="errormessage">您输入的内容过长</span>');
+        } else {
+            if ($(this).parent('.commonInputBox').hasClass('errorInput')) {
+                $(this).parent('.commonInputBox').removeClass('errorInput');
+                $(this).parent('.commonInputBox').find('.errormessage').remove();
+            }
+        }
+  });
+  
+  $("#fapiao_title").focus(function() {
+    if ($(this).parent('.commonInputBox').hasClass('errorInput')) {
+        $(this).parent('.commonInputBox').removeClass('errorInput');
+        $(this).parent('.commonInputBox').find('.errormessage').remove();
+    }
+  });
+ // 发票备注fapiao_memo
+  $("#fapiao_memo").blur(function(){
+        var fapiaoMemo = $(this).val().replace(/\s/g, "");
+        var memoLength=fapiaoMemo.length;
+        if (memoLength > 120) {
+            $(this).parent('.commonInputBox').find('.errormessage').remove();
+            $(this).parent('.commonInputBox').addClass('errorInput');
+            $(this).parent('.commonInputBox').append('<span class="errormessage">您输入的内容过长</span>');
+        } else {
+            if ($(this).parent('.commonInputBox').hasClass('errorInput')) {
+                $(this).parent('.commonInputBox').removeClass('errorInput');
+                $(this).parent('.commonInputBox').find('.errormessage').remove();
+            }
+        }
+  });
+  $("#fapiao_memo").focus(function() {
+    if ($(this).parent('.commonInputBox').hasClass('errorInput')) {
+        $(this).parent('.commonInputBox').removeClass('errorInput');
+        $(this).parent('.commonInputBox').find('.errormessage').remove();
+    }
+  });
+});
+</script>
+
+                    
+     
+                    <!--end invoice inof-->
+                    <!--start go next step btn-->
+                 
+                    
+                                        <div class="mt60 checkoutConfirm" style="margin-top: 20px;">
+                    					<span>亲爱的顾客，adidas官方旗舰店仅通过电子邮箱service@adidas.com与外拨客服电话021-67008299与您进行沟通，任何其他形式（如手机、QQ、非官方客服账号）的沟通，包括首位0开头的0-4008801515及0-4009995999电话均为诈骗信息，请勿轻信，以免造成财产损失。</span>
+                       </br></br>
+                    	<a href="javascript:;" title="确认下单" id='comfirm_order' class="btnCommon btnBlueLinear btnArrow w200 fl">确认下单<em></em></a>
+                        <a href="https://www.adidas.com.cn/checkout/cart/" title="返回购物车修改" class="checkoutContinue fl">返回购物车修改</a>
+                    </div>
+                    <!--end go next step btn-->
+                                        </form>
+                </div>
+                <!--end left aside col4-1-->
+                <!--start right aside col4-->
+                <div class="col4 last">
+                	<div class="loginBox">
+                		                		<div class="contentBox" id='logindiv'>
+                		<h3>
+                			登录
+                			<i class="iconTips"></i>
+                			<a href="https://www.adidas.com.cn/customer/account/create/">创建账号</a>
+                			<div class="tips"></div>
+                		</h3>
+						<form action="https://www.adidas.com.cn/yancheckout/process/loginforyan/" id="loginformdiv" method="post">
+								
+                		<div class="commonInputBox">
+                			<input type="text" class="inputText" name="login[username]" id="email" placeholder="* 用户名 / Email / 手机号" />
+                		</div>
+                		<div class="commonInputBox">
+                			<input type="password" class="inputText" name="login[password]" id="pass" placeholder="* 密码" />
+                		</div>
+                		<a href="javascript:;" title="登录" id="loginbtn" class="btnCommon btnBlueLinear btnArrow">登录<em></em></a>
+                		<p><a href="https://www.adidas.com.cn/customer/account/forgotpassword/">忘记密码?</a></p>
+                		</div>
+                		</form>
+                		<script>
+                		$("#loginbtn").click(function(){
+                    		var loginflag=true;
+                    		$('#logindiv input').each(function(){
+	                			if (($(this).val() == '' || $(this).val() == 'null' ||$(this).val()==$(this).attr("placeholder")) && $(this).parent('div').css('display')!='none') {
+	                	                errmsg($(this), '这是必填字段');
+	                	                loginflag=false;
+	                	        }
+	                			$(this).focus(function() {
+	                		        if ($(this).parent('.commonInputBox').hasClass('errorInput')) {
+	                		            $(this).parent('.commonInputBox').removeClass('errorInput');
+	                		            $(this).parent('.commonInputBox').find('.errormessage').remove();
+	                		        }
+	                		    });
+                        	});
+                        	if(loginflag){
+                        		$common.loading.show();
+                            	$("#loginformdiv").submit();
+                            }
+                		});
+                		</script>
+                		                	</div>
+                    <div class="orderSummary">
+	<h3>
+		订单摘要：<small>共2件</small>
+	</h3>
+	<div class="contentBox">
+		<div class="item">
+			商品总额 <span>¥658.00</span>
+		</div>
+		<div class="item">
+			优惠总额 <span>¥0.00</span>
+		</div>
+		<div class="item delivery">
+			运费 <span id="item_shipping_fee">¥0.00</span>
+		</div>
+		<div class="item total">
+			商品总计<span>¥658.00</span>
+		</div>
+		<div class="proList">
+			<ul>
+						            <li>
+	<div class="img">
+		<img src="https://www.adidas.com.cn/media/catalog/product/cache/1/thumbnail/120x/9df78eab33525d08d6e5fb8d27136e95/2/c/2c_950.jpg" />
+	</div>
+	<div class="text">
+		<p class="name">跑步 女子 跑步紧身裤 黑 B47765</p>
+		<p class="info">B47765</p>
+		<p class="info">颜色：黑</p>
+		<p class="info">尺码：
+				                                                                    A/M                                    </p> <br />
+		<p class="price">2x <span>¥329</span></p>
+		<p class="price">小计: <span>¥658</span></p>
+	</div>
+</li>
+		        			</ul>
+		</div>
+	</div>
+</div>
+                	<div class="infoBox">
+                		<h4>帮助？</h4>
+                		<a href="http://www.adidas.com.cn/directory/">关于订单</a><br />
+                		<a href="http://www.adidas.com.cn/directory/">验收验货</a><br />
+                		<a href="http://www.adidas.com.cn/directory/">物流配送</a><br />
+                		<a href="http://www.adidas.com.cn/directory/">售后服务</a>
+                	</div>                    &nbsp;                    <div class="infoBox">
+                		<h4>我们接受下列付款方式</h4>
+                		<img src="https://www.adidas.com.cn/skin/frontend/arvato/default/release_three/img/pay.jpg"/>
+                	</div>
+                </div>
+                <!--end right aside col4-->
+            </div>
+            <!--end wrapper min-width:950px-->
+        </div>
+<!--end login & register -->
+<div class="footBox">
+    <!--start #363738 background footer-->
+    <div class="footBot">
+    	<!--start wrapper min-width:950px-->
+    	<div class="wrapper cf">                  
+            <div class="copyRight">
+                <a href="http://www.adidas.com.cn/privacy-policy" title="隐私条款">隐私条款</a>
+                <span>苏ICP备14048805号-1</span>
+                <span>©2016 adidas</span>
+            </div>
+        </div>
+        <!--end wrapper min-width:950px-->
+    </div>
+    <!--end #363738 background footer-->
+</div>
+
+<!--start closePage popup-->
+<div class="popup closePage">
+    <div class="popupContentBox">
+        <a href="javascript:;" title="关闭" class="popCloseBtn closePop">关闭</a>
+        <div class="popupContent" tabindex="-1">
+            <span class="title">离开此网页</span>
+            <div class="info">您的设计将不会被保存</div>
+            <div class="buttonset">
+                <a href="#" class="continue btnCommon btnBlueLinear btnArrow">不保存继续</a>
+                <a href="javascript:;" class="cancel btnCommon btnBlueLinear closePop">取消</a>
+            </div>
+        </div>
+    </div>
+    <div class="closePageBg"></div>
+</div>
+ <script>
+var utag_data = {
+		customer_id  : '',
+		order_cart_id : '1086386',
+		page_name  :'SHIPPING AND PAYMENT',
+		page_type  : 'CHECKOUT',
+		product_id : ["B47765"] ,
+		product_model_id :  ["BUF64"] ,
+		product_name :  ["\u8dd1\u6b65 \u5973\u5b50 \u8dd1\u6b65\u7d27\u8eab\u88e4 \u9ed1 B47765"] ,
+		product_price :  ["329.0000"] ,
+		product_quantity :  [2] ,
+};
+(function(a,b,c,d){
+	a='//www.adidas.com.cn/skin/frontend/arvato/default/js/utag/utag0208.js';
+	b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+	a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+})();
+	$('#comfirm_order').click(function(){
+		setTimeout("utag_checkout_error()",1000); 
+		});			
+	function utag_checkout_error()
+	{
+		var error_field = new Array() ; 
+		$(".errorInput").each(function(){
+		    var field = $(this).children('.commonInput').attr('name') ; 
+		    error_field.push(field) ;  
+		  });
+		$(".errorSelect").each(function(){
+		    var field = $(this).children(':first').attr('name') ; 
+		    error_field.push(field) ;  
+		  });
+		 if(error_field.length>0){
+			console.log(error_field) ; 
+			utag.link({
+				event_name  : 'FORM ERROR',
+				form_error  : error_field,
+				form_name  : 'CHECKOUT'
+				});
+		}
+	}
+</script>    	                    	    <noscript><img src="https://www.adidas.com.cn/akam/10/pixel_11c9e021?a=dD03MGFjMmNmYjU2M2E0MjFiMTc1ZTA5MzQ5MDk4NzlhZjExYmU0YWEzJmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript></body>
+</html>
